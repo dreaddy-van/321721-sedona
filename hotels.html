@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Sedona - Hotels</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container-left">
+        <nav class="main-navigation">
+          <ul>
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Фото и видео</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="container-right">
+        <nav class="main-navigation">
+          <ul>
+            <li><a href="#">Карта штата</a></li>
+            <li><a href="#">Гостиницы</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <section class="filters">
+        <form class="filter-1" action="url" method="get">
+          <h2>Инфраструктура:</h2>
+          <label>
+            <input type="checkbox" name="features" value="pool" checked>Бассейн
+          </label>
+          <label>
+            <input type="checkbox" name="features" value="parking" checked>Парковка
+          </label>
+          <label>
+            <input type="checkbox" name="features" value="wi-fi" checked>Wi-fi
+          </label>
+        </form>
+        <form class="filter-2" action="url" method="get">
+          <h2>Тип жилья</h2>
+          <label>
+            <input type="checkbox" name="type" value="guesthouse" checked>Гостиница
+          </label>
+          <label>
+            <input type="checkbox" name="type" value="motel" checked>Мотель
+          </label>
+          <label>
+            <input type="checkbox" name="type" value="apartments" checked>Апартаменты
+          </label>
+        </form>
+        <form class="filter-range" action="url" method="get">
+          <h2>Стоимость в сутки (р):</h2>
+          <table>
+            <tr>
+              <td>От 0</td>
+              <td>До 3000</td>
+            </tr>
+          </table>
+<!Вставить Range/*>
+          <input type="submit" value="Показать">
+        </form>
+      </section>
+      <section class="content">
+        <div class="search-bar">
+          <h3>Найдено: 3</h3>
+          <p>Сортировка:</p>
+          <a class="search" href="#">По цене</a>
+          <a class="search" href="#">По типу</a>
+          <a class="search" href="#">По рейтингу</a>
+          <div class="sort">
+            <a class="sort-up"href="#"><img src="http://placehold.it" alt="up"></a>
+            <a class="sort-down"href="#"><img src="http://placehold.it" alt="down"></a>
+          </div>
+        </div>
+        <section class="hotel-item">
+          <div class="hotel-left">
+            <h3>Amara resort & spa</h3>
+            <p>Гостиница<span> от 4000 р.</span></p>
+            <a class="btn" href="#">Подобнее</a>
+            <a class="btn-buy" href="#">Забронировать</a>
+          </div>
+          <div class="hotel-right">
+            <img src="http://placehold.it" alt="4 stars">
+            <p>Рейтинг: 8,5</p>
+          </div>
+        </section>
+        <section class="hotel-item">
+          <div class="hotel-left">
+            <h3>Desert quail inn</h3>
+            <p>Мотель<span> от 3000 р.</span></p>
+            <a class="btn" href="#">Подобнее</a>
+            <a class="btn-buy" href="#">Забронировать</a>
+          </div>
+          <div class="hotel-right">
+            <img src="http://placehold.it" alt="3 stars">
+            <p>Рейтинг: 8,9</p>
+          </div>
+        </section>
+        <section class="hotel-item">
+          <div class="hotel-left">
+            <h3>Villas at poco diablo</h3>
+            <p>Апартаменты<span> от 2000 р.</span></p>
+            <a class="btn" href="#">Подобнее</a>
+            <a class="btn-buy" href="#">Забронировать</a>
+          </div>
+          <div class="hotel-right">
+            <img src="http://placehold.it" alt="2 stars">
+            <p>Рейтинг: 9,2</p>
+          </div>
+        </section>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="container">
+        <section class="footer-tag">
+          #visitsedona
+        </section>
+        <section class="footer-social">
+          <a href="#"><img src="http://placehold.it" alt="Twitter"></a>
+          <a href="#"><img src="http://placehold.it" alt="Facebook"></a>
+          <a href="#"><img src="http://placehold.it" alt="Youtube"></a>
+        </section>
+        <section class="copyright">
+          <p>website by</p>
+           <a href="#"><img src="http://placehold.it" alt="HTML Academy"></a>
+        </section>
+      </div>
+    </footer>
+  </body>
