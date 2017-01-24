@@ -6,60 +6,51 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="container-left">
-        <nav class="main-navigation">
+      <div class="logo">
+       <a href="index.html"><img src="img/logo" alt="City of Sedona"></a>
+      </div>
+      <nav class="main-navigation">
+        <div class="container-left">
           <ul>
             <li><a href="#">Информация</a></li>
             <li><a href="#">Фото и видео</a></li>
           </ul>
-        </nav>
-      </div>
-      <div class="container-right">
-        <nav class="main-navigation">
+        </div>
+        <div class="container-right">
           <ul>
             <li><a href="#">Карта штата</a></li>
             <li><a href="#">Гостиницы</a></li>
           </ul>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </header>
     <main class="container">
       <section class="filters">
         <form class="filter-1" action="url" method="get">
-          <h2>Инфраструктура:</h2>
-          <label>
+          <fieldset>
+            <legend>Инфраструктура:</legend>
             <input type="checkbox" name="features" value="pool" checked>Бассейн
-          </label>
-          <label>
             <input type="checkbox" name="features" value="parking" checked>Парковка
-          </label>
-          <label>
             <input type="checkbox" name="features" value="wi-fi" checked>Wi-fi
-          </label>
-        </form>
-        <form class="filter-2" action="url" method="get">
-          <h2>Тип жилья</h2>
-          <label>
-            <input type="checkbox" name="type" value="guesthouse" checked>Гостиница
-          </label>
-          <label>
-            <input type="checkbox" name="type" value="motel" checked>Мотель
-          </label>
-          <label>
-            <input type="checkbox" name="type" value="apartments" checked>Апартаменты
-          </label>
-        </form>
-        <form class="filter-range" action="url" method="get">
-          <h2>Стоимость в сутки (р):</h2>
-          <table>
-            <tr>
-              <td>От 0</td>
-              <td>До 3000</td>
-            </tr>
-          </table>
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья</legend>
+              <input type="checkbox" name="type" value="guesthouse" checked>Гостиница
+              <input type="checkbox" name="type" value="motel" checked>Мотель
+              <input type="checkbox" name="type" value="apartments" checked>Апартаменты
+          </fieldset>
+          <fieldset>
+            <legend>Стоимость в сутки (р):</legend>
+              <table>
+                <tr>
+                  <td>От 0</td>
+                  <td>До 3000</td>
+                </tr>
+              </table>
 <!Вставить Range/*>
-          <input type="submit" value="Показать">
-        </form>
+              <input type="submit" value="Показать">
+          </fieldset>
+        </form>  
       </section>
       <section class="content">
         <div class="search-bar">
@@ -69,11 +60,11 @@
           <a class="search" href="#">По типу</a>
           <a class="search" href="#">По рейтингу</a>
           <div class="sort">
-            <a class="sort-up"href="#"><img src="http://placehold.it" alt="up"></a>
-            <a class="sort-down"href="#"><img src="http://placehold.it" alt="down"></a>
+            <a class="sort-up" href="#"><img src="http://placehold.it" alt="up"></a>
+            <a class="sort-down" href="#"><img src="http://placehold.it" alt="down"></a>
           </div>
         </div>
-        <section class="hotel-item">
+        <article class="hotel-item">
           <div class="hotel-left">
             <h3>Amara resort & spa</h3>
             <p>Гостиница<span> от 4000 р.</span></p>
@@ -84,7 +75,7 @@
             <img src="http://placehold.it" alt="4 stars">
             <p>Рейтинг: 8,5</p>
           </div>
-        </section>
+        </article>
         <section class="hotel-item">
           <div class="hotel-left">
             <h3>Desert quail inn</h3>
@@ -117,13 +108,13 @@
           #visitsedona
         </section>
         <section class="footer-social">
-          <a href="#"><img src="http://placehold.it" alt="Twitter"></a>
-          <a href="#"><img src="http://placehold.it" alt="Facebook"></a>
-          <a href="#"><img src="http://placehold.it" alt="Youtube"></a>
+          <a href="#">Twitter</a>
+          <a href="#">Facebook</a>
+          <a href="#">Youtube</a>
         </section>
         <section class="copyright">
           <p>website by</p>
-           <a href="#"><img src="http://placehold.it" alt="HTML Academy"></a>
+           <a href="#">HTML Academy</a>
         </section>
       </div>
     </footer>
