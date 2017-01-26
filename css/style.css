@@ -1,29 +1,46 @@
-h1{
+.index-main-title {
   font-family: "Pt sans";
   font-size: 50px;
-  line-height: 120%;
-  font-weight: "bold";
-  color: black;
-}
-h2{
-  font-family: "Pt sans";
-  font-size: 21px;
-  line-height: 120%;
-  font-weight: "bold";
-  color: black;
-}
-body{
-  font-family: "Pt sans";
-  font-size: 14px;
-  line-height: 120%;
+  line-height: 1.2;
   font-weight: "bold";
   color: black;
 }
 
-.lead {
+.lead, .reason-title, .feature-title {
   font-family: "Pt sans";
   font-size: 21px;
-  line-height: 120%;
+  line-height: 1.2;
   font-weight: "bold";
+  color: black;
+  text-transform: uppercase;
+}
+
+.white {
+  color: white;
+}
+
+.hotel-search-title {
+  font-family: "Pt sans";
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: "bold";
+  color: black;
+  text-transform: uppercase;
+}
+
+.hotels-title {
+  font-family: "Pt sans";
+  font-size: 21px;
+  line-height: 1.2;
+  font-weight: "bold";
+  color: black;
+  text-transform: uppercase;
+}
+
+body {
+  font-family: "Pt sans";
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: "normal";
   color: black;
 }
