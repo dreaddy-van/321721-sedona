@@ -12,22 +12,23 @@
     </div>
     <nav class="main-navigation">
       <div class="container-left">
-        <ul>
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и видео</a></li>
-        </ul>
+
+          <a class="main-nav-item" href="#">Информация</a></li>
+          <a class="main-nav-item" href="#">Фото и видео</a></li>
+      
       </div>
       <div class="container-right">
         <ul>
-          <li><a href="#">Карта штата</a></li>
-          <li><a href="#">Гостиницы</a></li>
+          <li><a class="main-nav-item" href="#">Карта штата</a></li>
+          <li><a class="main-nav-item" href="#">Гостиницы</a></li>
         </ul>
       </div>
     </nav>
   </header>
   <main class="container">
     <div class="index-img">
-      <h1 class="index-main-title">Welcome to the gorgeous Sedona!</h1>
+      <!--<h1 class="index-main-title">Welcome to the gorgeous Sedona!</h1>-->
+      <img class="welcome-text" src="img/welcome-text.png" alt="Welcome to the gorgeous Sedona!" width="458" height="352">
       <!--background-photo-->
     </div>
     <div class="index-img-mask">
@@ -38,16 +39,16 @@
         <b class="lead">Седона - небольшой городок в аризоне, заслуживающий большего!</b>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон</p>
       </div>
-      <section class="reason">
-        <div class="reason-1-text">
+      <div class="reason">
+        <div class="reason-text">
           <h2 class="reason-title white">Настоящий городок</h2>
           <p>-№1-</p>
           <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
         </div>
-        <div class="reason-1-foto">
+        <div class="reason-foto">
           <img src="img/reason1-photo.jpg" alt="Good view" width="800" height="400">
         </div>
-      </section>
+      </div>
       <div class="features">
         <div class="feature-item">
           <h2 class="reason-title">Жилье</h2>
@@ -63,10 +64,10 @@
         </div>
       </div>
       <div class="reason">
-        <div class="reason-2-foto">
+        <div class="reason-foto">
           <img src="img/reason2-photo.jpg" alt="Bridge" width="800" height="400">
         </div>
-        <div class="reason-2-text">
+        <div class="reason-text">
           <h2 class="reason-title white">Там есть мост дьявола</h2>
           <p>-№2-</p>
           <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
@@ -92,7 +93,7 @@
     </section>
     <section class="hotel-search">
       <h2 class=hotel-search-title>Заинтересовались?</h2>
-      <p>Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+      <p>Укажите предполагаемые даты поездки, <br> и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
       <a class="search-form-button" href="#">Поиск гостиницы в Седоне</a>
       <!--форма поиска гостиницы-->
       <form class="search-form" action="index.html" method="get">
@@ -122,21 +123,19 @@
       <img src="img/map.jpg" alt="Map" width="1200" height="595">
     </section>
   </main>
-  <footer class="main-footer">
-    <div class="container">
-      <section class="footer-tag">
-        #visitsedona
-      </section>
-      <section class="footer-social">
-        <a href="#">Twitter</a>
-        <a href="#">Facebook</a>
-        <a href="#">Youtube</a>
-      </section>
-      <section class="copyright">
-        <p>website by</p>
-        <a href="#">HTML Academy</a>
-      </section>
-    </div>
+  <footer class="footer">
+    <section class="footer-item">
+      <b class="lead">#visitsedona</b>
+    </section>
+    <section class="footer-item">
+      <a class="social-item" href="#"><p>Twitter</p></a>
+      <a class="social-item" href="#"><p>Facebook</p></a>
+      <a class="social-item" href="#"><p>Youtube</p></a>
+    </section>
+    <section class="footer-item">
+      <p>website by</p>
+      <a href="#">HTML Academy</a>
+    </section>
   </footer>
 </body>
 </html>

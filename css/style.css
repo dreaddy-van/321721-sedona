@@ -1,46 +1,212 @@
+
+/*Типографика*/
+
 .index-main-title {
-  font-family: "Pt sans";
+  font-family: Pt sans;
   font-size: 50px;
   line-height: 1.2;
-  font-weight: "bold";
+  font-weight: bold;
   color: black;
 }
 
 .lead, .reason-title {
-  font-family: "Pt sans";
+  font-family: Pt sans;
   font-size: 21px;
   line-height: 1.2;
-  font-weight: "bold";
+  font-weight: bold;
   color: black;
   text-transform: uppercase;
 }
 
-.white {
-  color: white;
-}
+/*.white {
+color: white;
+}*/
 
 .hotel-search-title {
-  font-family: "Pt sans";
+  font-family: Pt sans;
   font-size: 30px;
   line-height: 1.2;
-  font-weight: "bold";
+  font-weight: bold;
   color: black;
   text-transform: uppercase;
 }
 
 .hotels-title {
-  font-family: "Pt sans";
+  font-family: Pt sans;
   font-size: 21px;
   line-height: 1.2;
-  font-weight: "bold";
+  font-weight: bold;
   color: black;
   text-transform: uppercase;
 }
 
 body {
-  font-family: "Pt sans";
+  font-family: Pt sans;
   font-size: 14px;
   line-height: 1.2;
-  font-weight: "normal";
+  font-weight: normal;
   color: black;
+  text-transform: uppercase;
+}
+
+.main-nav-item {
+  font-family: Pt sans;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/*Header*/
+main {
+
+}
+
+.main-navigation {
+  outline: 2px solid green;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.container-left, .container-right {
+  outline: 2px solid red;
+  width: 40%;
+  display: flex;
+}
+
+.container-left {
+  margin-left: 6%;
+}
+
+.container-right {
+  margin-right: 6%;
+}
+
+.main-nav-item {
+  display: inline-block;
+    outline: 2px solid yellow;
+    width: 50%;
+  }
+
+/*Index*/
+
+.index-img {
+  outline: 2px solid green;
+  width: 100%;
+  height: 510px;
+  display: flex;
+}
+
+.welcome-text {
+  outline: 2px solid red;
+  margin-top: 75px;
+  margin-bottom: 82px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.index-img-mask {
+  outline: 2px solid yellow;
+  margin-top: -60px;
+  min-height: 60px;
+  margin-bottom: 60px;
+}
+
+.reasons-header {
+  outline: 2px solid green;
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.reason {
+  outline: 2px solid green;
+  display: flex;
+  justify-content: space-between;
+}
+
+.reason-text {
+  outline: 2px solid red;
+  width: 33%;
+  height: 255px;
+}
+
+.reason-foto {
+  outline: 2px solid red;
+  width: 67%;
+  height: 255px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature-item {
+  outline: 2px solid red;
+  width: 33%;
+  height: 330px;
+  text-align: center;
+}
+
+.reason-item {
+  outline: 2px solid red;
+  width: 33%;
+  height: 255px;
+  text-align: center;
+}
+
+.hotel-search {
+  text-align: center;
+  padding-top: 55px;
+}
+
+.search-form-button {
+  display: inline-block;
+  width: 568px;
+  height: 86px;
+  margin-top: 50px;
+  outline: 2px solid red;
+}
+
+.search-form {
+  box-sizing: border-box;
+  width: 568px;
+  height: 395px;
+  outline: 2px solid red;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 55px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.map {
+  width: 100%;
+  height: 595px;
+  margin-bottom: -120px;
+}
+
+/*footer*/
+
+.footer {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-item {
+  outline: 2px solid red;
+  width: 33%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-item {
+  margin-right: 4px;
 }
