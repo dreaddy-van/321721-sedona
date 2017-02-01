@@ -1,3 +1,10 @@
+/*Центровка и мин-макс-размеры*/
+
+.container {
+  min-width: 768px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
 /*Типографика*/
 
@@ -60,36 +67,32 @@ body {
 }
 
 /*Header*/
-main {
-
-}
 
 .main-navigation {
   outline: 2px solid green;
+  padding: 0 6%;
+}
+.main-nav {
+  outline: 2px solid yellow;
   display: flex;
-  justify-content: space-between;
-
 }
 
-.container-left, .container-right {
-  outline: 2px solid red;
+.left {
   width: 40%;
-  display: flex;
+  float: left;
+  justify-content: flex-start;
 }
 
-.container-left {
-  margin-left: 6%;
-}
-
-.container-right {
-  margin-right: 6%;
+.right {
+  width: 40%;
+  float: right;
+  justify-content: flex-end;
 }
 
 .main-nav-item {
-  display: inline-block;
-    outline: 2px solid yellow;
-    width: 50%;
-  }
+  outline: 2px solid red;
+  width: 50%;
+}
 
 /*Index*/
 
@@ -209,4 +212,73 @@ main {
 
 .social-item {
   margin-right: 4px;
+}
+
+/*Hotels-page*/
+
+.filters {
+
+  min-width: 217px;
+  padding: 30px 6%;
+}
+
+.filter {
+  display: flex;
+}
+
+.checkboxes {
+  display: flex;
+  min-width: 155px;
+  margin-right: 60px;
+}
+
+.range {
+  margin-left: auto;
+  min-width: 225px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: baseline;
+  padding: 10px 6%;
+  border-bottom: 2px solid grey;
+}
+
+.sort-start {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.search-bar span, .search-bar p {
+  margin-right: 40px;
+}
+
+.sort {
+  margin-right: 30px;
+}
+
+.hotel-item {
+  border-bottom: 2px solid grey;
+  padding: 30px 6%;
+  display: flex;
+}
+
+.hotel-action {
+  margin-left: 30px;
+  margin-right: auto;
+
+}
+.hotel-buttons {
+  display: flex;
+}
+
+.hotel-button-item {
+  margin-right: 6px;
+}
+
+.hotel-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
 }
