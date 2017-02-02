@@ -2,7 +2,8 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css" >
   <title>Sedona - Hotels</title>
 </head>
 <body>
@@ -12,18 +13,12 @@
         <a href="index.html"><img src="img/menu-logo.png" alt="City of Sedona" width="138" height="70"></a>
       </div>
       <nav class="main-navigation">
-        <div class="container-left">
-          <ul>
-            <li><a href="#">Информация</a></li>
-            <li><a href="#">Фото и видео</a></li>
+          <ul class="main-nav">
+            <li class="main-nav-item"><a href="#">Информация</a></li>
+            <li class="main-nav-item"><a href="#">Фото и видео</a></li>
+            <li class="main-nav-item"><a href="#">Карта штата</a></li>
+            <li class="main-nav-item"><a href="#">Гостиницы</a></li>
           </ul>
-        </div>
-        <div class="container-right">
-          <ul>
-            <li><a href="#">Карта штата</a></li>
-            <li><a href="#">Гостиницы</a></li>
-          </ul>
-        </div>
       </nav>
     </header>
     <main>
@@ -84,11 +79,13 @@
         <article class="hotel-item">
           <img src="img/amara-hotel.jpg" alt="Amara resort & spa" width="135" height="90">
           <div class="hotel-action">
-            <span class="hotels-title">Amara resort & spa</span>
+            <div>
+              <p class="hotels-title">Amara resort & spa</p>
+            </div>
             <div class="hotel-buttons">
               <div class="hotel-button-item">
                 <p>Гостиница</p>
-                <a class="btn" href="#">Подобнее</a>
+                <a class="btn" href="#">Подробнее</a>
               </div>
               <div class="hotel-button-i">
                 <p>от 4000 р.</p>
@@ -101,14 +98,16 @@
             <p>Рейтинг: 8,5</p>
           </div>
         </article>
-        <section class="hotel-item">
+        <article class="hotel-item">
           <img src="img/desert-hotel.jpg" alt="Desert quail inn" width="135" height="90">
           <div class="hotel-action">
-            <span class="hotels-title">Desert quail inn</span>
+            <div>
+              <p class="hotels-title">Desert quail inn</p>
+            </div>
             <div class="hotel-buttons">
               <div class="hotel-button-item">
                 <p>Мотель</p>
-                <a class="btn" href="#">Подобнее</a>
+                <a class="btn" href="#">Подробнее</a>
               </div>
               <div class="hotel-button-i">
                 <p>от 3000 р.</p>
@@ -120,15 +119,17 @@
             <img src="img/3stars.png" alt="3 stars">
             <p>Рейтинг: 8,9</p>
           </div>
-        </section>
-        <section class="hotel-item">
+        </article>
+        <article class="hotel-item">
           <img src="img/villa-hotel.jpg" alt="Villas at poco diablo" width="135" height="90">
           <div class="hotel-action">
-            <span class="hotels-title">Villas at poco diablo</span>
+            <div>
+              <p class="hotels-title">Villas at poco diablo</p>
+            </div>
             <div class="hotel-buttons">
               <div class="hotel-button-item">
                 <p>Апартаменты</p>
-                <a class="btn" href="#">Подобнее</a>
+                <a class="btn" href="#">Подробнее</a>
               </div>
               <div class="hotel-button-i">
                 <p>от 2000 р.</p>
@@ -140,7 +141,7 @@
             <img src="img/2stars.png" alt="2 stars">
             <p>Рейтинг: 9,2</p>
           </div>
-        </section>
+        </article>
       </section>
     </main>
     <footer class="footer">
