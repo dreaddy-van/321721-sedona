@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+ <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css" >
   <title>Sedona - Hotels</title>
@@ -17,7 +18,7 @@
             <li class="main-nav-item"><a href="#">Информация</a></li>
             <li class="main-nav-item"><a href="#">Фото и видео</a></li>
             <li class="main-nav-item"><a href="#">Карта штата</a></li>
-            <li class="main-nav-item"><a href="#">Гостиницы</a></li>
+            <li class="main-nav-item current-page"><a href="#">Гостиницы</a></li>
           </ul>
       </nav>
     </header>
@@ -29,38 +30,36 @@
         <form class="filter" action="url" method="get">
           <fieldset class="checkboxes">
             <legend>Инфраструктура:</legend>
-            <label>
-              <input type="checkbox" name="features" value="pool" checked>Бассейн
-            </label>
-            <label>
-              <input type="checkbox" name="features" value="parking" checked>Парковка
-            </label>
-            <label>
-              <input type="checkbox" name="features" value="wi-fi" checked>Wi-fi
-            </label>
+              <input type="checkbox" name="features" value="pool" id="ch1-1" checked>
+              <label for="ch1-1">Бассейн</label>
+              <input type="checkbox" name="features" value="parking" id="ch1-2">
+              <label for="ch1-2">Парковка</label>
+              <input type="checkbox" name="features" value="wi-fi" id="ch1-3">
+              <label for="ch1-3">Wi-fi</label>
           </fieldset>
           <fieldset class="checkboxes">
             <legend>Тип жилья</legend>
-            <label>
-              <input type="checkbox" name="type" value="guesthouse" checked>Гостиница
-            </label>
-            <label>
-              <input type="checkbox" name="type" value="motel" checked>Мотель
-            </label>
-            <label>
-              <input type="checkbox" name="type" value="apartments" checked>Апартаменты
-            </label>
+              <input type="checkbox" name="type" value="guesthouse" id="ch2-1" checked>
+              <label for="ch2-1">Гостиница</label>
+              <input type="checkbox" name="type" value="motel" id="ch2-2" checked>
+              <label for="ch2-2">Мотель</label>
+              <input type="checkbox" name="type" value="apartments" id="ch2-3" checked>
+              <label for="ch2-3">Апартаменты</label>
           </fieldset>
           <fieldset class="range">
-            <legend>Стоимость в сутки (р):</legend>
-            <div class="price-min">
-              <p>От 0</p>
+            <legend class="range-title">Стоимость в сутки (р):</legend>
+            <div class="price-controls">
+              <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+              <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
             </div>
-            <div class="price-max">
-              <p>До 3000</p>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
             </div>
-            <!--Вставить Range/-->
-            <input type="submit" value="Показать">
+            <button class="btn-transparent" type="submit">Показать</button>
           </fieldset>
         </form>
       </section>
@@ -68,19 +67,19 @@
         <div class="search-bar">
           <span class="hotels-title">Найдено: 3</span>
           <p>Сортировка:</p>
-          <a class="sort">По цене</a>
+          <a class="sort current-sort">По цене</a>
           <a class="sort">По типу</a>
           <a class="sort">По рейтингу</a>
-          <div class="sort-start">
-            <a>Больше</a>
-            <a>Меньше</a>
+          <div class="sort-order">
+            <a class="order sort-down"><p>Снизу</p></a>
+            <a class="order sort-up current-order-up"><p>Сверху</p></a>
           </div>
         </div>
         <article class="hotel-item">
-          <img src="img/amara-hotel.jpg" alt="Amara resort & spa" width="135" height="90">
+          <a href=#><img src="img/amara-hotel.jpg" alt="Amara resort & spa" width="135" height="90"></a>
           <div class="hotel-action">
             <div>
-              <p class="hotels-title">Amara resort & spa</p>
+              <a href=# class="hotels-title">Amara resort &amp; spa</a>
             </div>
             <div class="hotel-buttons">
               <div class="hotel-button-item">
@@ -99,10 +98,10 @@
           </div>
         </article>
         <article class="hotel-item">
-          <img src="img/desert-hotel.jpg" alt="Desert quail inn" width="135" height="90">
+          <a href=#><img src="img/desert-hotel.jpg" alt="Desert quail inn" width="135" height="90"></a>
           <div class="hotel-action">
             <div>
-              <p class="hotels-title">Desert quail inn</p>
+              <a href=# class="hotels-title">Desert quail inn</a>
             </div>
             <div class="hotel-buttons">
               <div class="hotel-button-item">
@@ -121,10 +120,10 @@
           </div>
         </article>
         <article class="hotel-item">
-          <img src="img/villa-hotel.jpg" alt="Villas at poco diablo" width="135" height="90">
+          <a href=#><img src="img/villa-hotel.jpg" alt="Villas at poco diablo" width="135" height="90"></a>
           <div class="hotel-action">
             <div>
-              <p class="hotels-title">Villas at poco diablo</p>
+              <a href=# class="hotels-title">Villas at poco diablo</a>
             </div>
             <div class="hotel-buttons">
               <div class="hotel-button-item">
@@ -148,14 +147,14 @@
       <section class="footer-item">
         <b class="lead">#visitsedona</b>
       </section>
-      <section class="footer-item">
-        <a class="social-item" href="#"><p>Twitter</p></a>
-        <a class="social-item" href="#"><p>Facebook</p></a>
-        <a class="social-item" href="#"><p>Youtube</p></a>
+      <section class="footer-item social">
+        <a class="social-item tw" href="#"><p>Twitter</p></a>
+        <a class="social-item fb" href="#"><p>Facebook</p></a>
+        <a class="social-item yt" href="#"><p>Youtube</p></a>
       </section>
       <section class="footer-item">
         <p>website by</p>
-        <a href="#">HTML Academy</a>
+        <a class="site-by" href="https://htmlacademy.ru"><p>HTML Academy</p></a>
       </section>
     </footer>
   </div>

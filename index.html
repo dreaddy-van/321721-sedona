@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css" >
   <title>Sedona - the best!</title>
@@ -37,9 +38,9 @@
         </div>
         <div class="reason">
           <div class="reason-text">
-            <h2 class="reason-title white">Настоящий городок</h2>
-            <p>-№1-</p>
-            <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+            <h2 class="reason-title">Настоящий городок</h2>
+            <p>&mdash; №1 &mdash;</p>
+            <p>Седона &mdash; не аттракцион для туристов, там течет своя жизнь</p>
           </div>
           <div class="reason-foto">
             <img src="img/reason1-photo.jpg" alt="Good view" width="800" height="400">
@@ -48,15 +49,15 @@
         <div class="features">
           <div class="feature-item">
             <h2 class="reason-title">Жилье</h2>
-            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            <p>Рекомендуем пожить в&nbsp;настоящем мотеле, все&nbsp;как&nbsp;в&nbsp;кино!</p>
           </div>
           <div class="feature-item">
             <h2 class="reason-title">Еда</h2>
-            <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+            <p>Всегда заказывайте фирменный бургер, Вы&nbsp;не&nbsp;разочаруетесь!</p>
           </div>
           <div class="feature-item">
             <h2 class="reason-title">Сувениры</h2>
-            <p>Не только китайского, но и местного производства!</p>
+            <p>Не только китайского, но&nbsp;и&nbsp;местного производства!</p>
           </div>
         </div>
         <div class="reason">
@@ -69,16 +70,16 @@
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
         </div>
-        <div class="reason">
+        <div class="reason reasons-block">
           <div class="reason-item">
             <h2 class="reason-title">Небольшая площадь</h2>
             <p>-№3-</p>
-            <p>Все достопримечательности находятся очень близко</p>
+            <p>Все достопримеча&shy;тельности находятся очень близко</p>
           </div>
           <div class="reason-item">
             <h2 class="reason-title">Красивая дорога</h2>
             <p>-№4-</p>
-            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <p>Ехать в Седону из Лас-Вегаса cовсем не скучно!</p>
           </div>
           <div class="reason-item">
             <h2 class="reason-title">Мало туристов</h2>
@@ -90,30 +91,32 @@
       <section class="hotel-search">
         <h2 class=hotel-search-title>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки, <br> и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-        <a class="search-form-button" href="#">Поиск гостиницы в Седоне</a>
-        <!--форма поиска гостиницы-->
-        <form class="search-form" action="index.html" method="get">
-          <label>Дата заезда:
-            <input type="text" name="date" value="24 апреля 2017">
-            <button type="button" name="calendar"></button>
-          </label>
-          <label>Дата выезда:
-            <input type="text" name="date" value="4 июля 2017">
-            <button type="button" name="calendar"></button>
-          </label>
-          <label>Взрослые:
-            <button type="button" name="minus"></button>
-            <input type="text" name="adults" value="2">
-            <button type="button" name="plus"></button>
-          </label>
-          <label>Дети:
-            <button type="button" name="minus"></button>
-            <input type="text" name="kids" value="0">
-            <button type="button" name="plus"></button>
-          </label>
-          <input type="submit" class="link" value="Найти">
-        </form>
+        <div class="form-position">
+          <a class="search-form-button" href="#"><p>Поиск гостиницы в Седоне</p></a>
+          <!--форма поиска гостиницы-->
+          <form class="search-form" action="index.html" method="get">
+            <label>Дата заезда:
+              <input type="text" name="date"  value="24 апреля 2017">
+              <button type="button" name="calendar"> </button>
+            </label>
+            <label>Дата выезда:
+              <input type="text" name="date" value="4 июля 2017">
+              <button type="button" name="calendar"></button>
+            </label>
+            <label>Взрослые:
+              <button type="button" name="minus"></button>
+              <input type="text" name="adults" value="2">
+              <button type="button" name="plus"></button>
+            </label>
+            <label>Дети:
+              <button type="button" name="minus"></button>
+              <input type="text" name="kids" value="0">
+              <button type="button" name="plus"></button>
+            </label>
+            <button class="submit-btn" type="submit" class="link" value="Найти">Найти
+          </form>
         <!--/форма поиска -->
+        </div>  
       </section>
       <section class="map">
         <img src="img/map.jpg" alt="Map" width="1200" height="595">
@@ -123,16 +126,16 @@
       <section class="footer-item">
         <b class="lead">#visitsedona</b>
       </section>
-      <section class="footer-item">
-        <a class="social-item" href="#"><p>Twitter</p></a>
-        <a class="social-item" href="#"><p>Facebook</p></a>
-        <a class="social-item" href="#"><p>Youtube</p></a>
+      <section class="footer-item social">
+        <a class="social-item tw" href="#"><p>Twitter</p></a>
+        <a class="social-item fb" href="#"><p>Facebook</p></a>
+        <a class="social-item yt" href="#"><p>Youtube</p></a>
       </section>
       <section class="footer-item">
         <p>website by</p>
-        <a href="#">HTML Academy</a>
+        <a class="site-by" href="https://htmlacademy.ru"><p>HTML Academy</p></a>
       </section>
-    </footer>
+      </footer>
   </div>
 </body>
 </html>
