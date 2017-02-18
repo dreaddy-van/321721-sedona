@@ -283,6 +283,7 @@ body {
   line-height: 26px;
   font-weight: bold;
   background-color: #766357;
+  cursor: default;
 }
 
 .form-position {
@@ -345,6 +346,15 @@ body {
   text-transform: uppercase
 }
 
+.search-form input:hover {
+  background-color: #ebebeb;  
+}
+
+.search-form input:focus {
+  background-color: #ffffff;
+  border-color: #e5e5e5;
+}
+
 .calend-in {
   position: absolute;
   right: 68px;
@@ -363,9 +373,19 @@ body {
   left: 0;
   width: 21px;
   height: 22px;
-  background-image: url(../img/calendar.png);
-  background-position: center;
+  background-image: url(../img/spr.png);
+  background-position: -10px -94px;
  }
+
+.calend-in:hover::before {
+  background-image: url(../img/spr.png);
+  background-position: -10px -52px;
+}
+
+.calend-in:active::before {
+  background-image: url(../img/spr.png);
+  background-position: -10px -10px;
+}
 
 .calend-out {
   position: absolute;
@@ -383,11 +403,21 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-   width: 21px;
+  width: 21px;
   height: 22px;
-  background-image: url(../img/calendar.png);
-  background-position: center;
+  background-image: url(../img/spr.png);
+  background-position: -10px -94px;
  }
+
+.calend-out:hover::before {
+  background-image: url(../img/spr.png);
+  background-position: -10px -52px;
+}
+
+.calend-out:active::before {
+  background-image: url(../img/spr.png);
+  background-position: -10px -10px;
+}
 
 .adults {
   box-sizing: border-box;
@@ -573,6 +603,7 @@ body {
   background-color: #81b3d2;
 }
 
+
 .submit-btn {
   box-sizing: border-box;
   width: 460px;
@@ -586,8 +617,15 @@ body {
   border: none;
 }
 
+.submit-btn:hover {
+  background-color: #669ec0;
+}
+
+.submit-btn:active {
+  background-color: #5496bd;
+  color: rgba(255,255,255,0.3);
+}
 .map {
-  
   width: 100%;
   height: 592px;
   margin-bottom: -120px;
@@ -643,41 +681,42 @@ body {
 .tw {
   background-image: url(../img/spr.png);
   background-repeat: no-repeat;
-  background-position: 9px -187px;
+  background-position: 6px -359px;
 }
 
 .fb {
   background-image: url(../img/spr.png);
   background-repeat: no-repeat;
-  background-position: 10px -78px;
+  background-position: 8px -470px;
 }
 
 .yt {
   background-image: url(../img/spr.png);
   background-repeat: no-repeat;
-  background-position: 6px 3px;
+  background-position: 3px -395px;
 }
 
 .tw:active {
   background-image: url(../img/spr.png);
   background-repeat: no-repeat;
-  background-position: 7px -153px;
+  background-position: 6px -325px;
   background-color: #5496bd;
 }
 
 .fb:active {
   background-image: url(../img/spr.png);
   background-repeat: no-repeat;
-  background-position: 10px -116px;
+  background-position: 8px -509px;
   background-color: #5496bd;
 }
 
 .yt:active {
   background-image: url(../img/spr.png);
   background-repeat: no-repeat;
-  background-position: 6px -223px;
+  background-position: 3px -431px;
   background-color: #5496bd;
 }
+
 .site-by p {
   display: none;
 }
@@ -756,23 +795,23 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 16px;
-  height: 16px;
-  border: 2px solid #ffffff;
-  border-radius: 20%;
-  background-color: transparent;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/spr.png");
+  background-repeat: no-repeat;
+  background-position: -11px -258px;
 }
 
-.checkboxes input:checked + label::after {
+.checkboxes input:checked + label::before {
   content: "";
   position: absolute;
   top: 0px;
-  left: 3px;
+  left: 0px;
+  width: 250px;
+  height: 20px;
   background-image: url("../img/spr.png");
   background-repeat: no-repeat;
-  width: 40px;
-  height: 28px;
-  background-position: -13px -53px;
+  background-position: -11px -299px;
 }
 
 .range {
@@ -1085,6 +1124,15 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
+}
+
+.hotel-info::before {
+  content: "";
+  position: absolute;
+  width: 84px;
+  height: 21px;
+  background-image: url(../img/spr.png);
+  background-position: -10px -136px;
 }
 
 .hotel-info p {
