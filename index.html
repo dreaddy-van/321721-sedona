@@ -4,7 +4,7 @@
   <meta charset="utf-8">
    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css" >
+  <link rel="stylesheet" href="css/style.css">
   <title>Sedona - the best!</title>
 </head>
 <body>
@@ -28,62 +28,59 @@
         <img class="welcome-text" src="img/welcome-text.png" alt="Welcome to the gorgeous Sedona!" width="458" height="352">
         <!--background-photo-->
       </div>
-      <div class="index-img-mask">
-        <!--background-->
-      </div>
       <section class="reasons">
         <div class="reasons-header">
-          <b class="lead">Седона - небольшой городок в аризоне, заслуживающий большего!</b>
+          <h1 class="lead">Седона &ndash; небольшой городок в аризоне,<br> заслуживающий большего!</h1>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон</p>
         </div>
         <div class="reason">
           <div class="reason-text">
             <h2 class="reason-title">Настоящий городок</h2>
-            <p>&mdash; №1 &mdash;</p>
+            <span>&mdash; №1 &mdash;</span>
             <p>Седона &mdash; не аттракцион для туристов, там течет своя жизнь</p>
           </div>
-          <div class="reason-foto">
+          <div class="reason-photo">
             <img src="img/reason1-photo.jpg" alt="Good view" width="800" height="400">
           </div>
         </div>
         <div class="features">
           <div class="feature-item">
-            <h2 class="reason-title">Жилье</h2>
+            <h2 class="feature-title">Жилье</h2>
             <p>Рекомендуем пожить в&nbsp;настоящем мотеле, все&nbsp;как&nbsp;в&nbsp;кино!</p>
           </div>
           <div class="feature-item">
-            <h2 class="reason-title">Еда</h2>
+            <h2 class="feature-title">Еда</h2>
             <p>Всегда заказывайте фирменный бургер, Вы&nbsp;не&nbsp;разочаруетесь!</p>
           </div>
           <div class="feature-item">
-            <h2 class="reason-title">Сувениры</h2>
+            <h2 class="feature-title">Сувениры</h2>
             <p>Не только китайского, но&nbsp;и&nbsp;местного производства!</p>
           </div>
         </div>
         <div class="reason">
-          <div class="reason-foto">
+          <div class="reason-photo">
             <img src="img/reason2-photo.jpg" alt="Bridge" width="800" height="400">
           </div>
           <div class="reason-text">
-            <h2 class="reason-title white">Там есть мост дьявола</h2>
-            <p>-№2-</p>
+            <h2 class="reason-title">Там есть мост&nbsp;дьявола</h2>
+            <span>&mdash; №2 &mdash;</span>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
         </div>
         <div class="reason reasons-block">
           <div class="reason-item">
-            <h2 class="reason-title">Небольшая площадь</h2>
-            <p>-№3-</p>
+            <h2 class="reason-block-title">Небольшая площадь</h2>
+            <span>&mdash; №3 &mdash;</span>
             <p>Все достопримеча&shy;тельности находятся очень близко</p>
           </div>
           <div class="reason-item">
-            <h2 class="reason-title">Красивая дорога</h2>
-            <p>-№4-</p>
+            <h2 class="reason-block-title">Красивая дорога</h2>
+            <span>&mdash; №4 &mdash;</span>
             <p>Ехать в Седону из Лас-Вегаса cовсем не скучно!</p>
           </div>
           <div class="reason-item">
-            <h2 class="reason-title">Мало туристов</h2>
-            <p>-№5-</p>
+            <h2 class="reason-block-title">Мало туристов</h2>
+            <span>&mdash; №5 &mdash;</span>
             <p>Большинство едет в Гранд каньон и толпится там</p>
           </div>
         </div>
@@ -96,23 +93,22 @@
           <!--форма поиска гостиницы-->
           <form class="search-form" action="index.html" method="get">
             <label>Дата заезда:
-              <input type="text" name="date"  value="24 апреля 2017">
-              <button type="button" name="calendar"> </button>
+              <input class="check-in" type="text" name="date"  value="24 апреля 2017">
             </label>
+            <button class="calend-in" type="button" name="calendar"></button>
             <label>Дата выезда:
-              <input type="text" name="date" value="4 июля 2017">
-              <button type="button" name="calendar"></button>
+              <input class="check-out" type="text" name="date" value="4 июля 2017">
             </label>
-            <label>Взрослые:
-              <button type="button" name="minus"></button>
-              <input type="text" name="adults" value="2">
-              <button type="button" name="plus"></button>
-            </label>
-            <label>Дети:
-              <button type="button" name="minus"></button>
-              <input type="text" name="kids" value="0">
-              <button type="button" name="plus"></button>
-            </label>
+            <button class="calend-out" type="button" name="calendar"></button>
+            <label for="adults">Взрослые:</label>
+            <button class="adults-minus-btn" type="button" name="minus"></button>
+            <input id="adults" type="text" name="adults" value="2">
+            <button class="adults-plus-btn" type="button" name="plus"></button>
+            
+            <label for="childs">Дети:</label>
+            <button class="childs-minus-btn" type="button" title="Меньше">Меньше</button>
+            <input id="childs" type="text" name="childs" value="0">
+            <button class="childs-plus-btn" type="button" title="Больше">Больше</button>
             <button class="submit-btn" type="submit" class="link" value="Найти">Найти
           </form>
         <!--/форма поиска -->
@@ -124,7 +120,7 @@
     </main>
     <footer class="footer">
       <section class="footer-item">
-        <b class="lead">#visitsedona</b>
+        <b class="hashtag">#visitsedona</b>
       </section>
       <section class="footer-item social">
         <a class="social-item tw" href="#"><p>Twitter</p></a>
