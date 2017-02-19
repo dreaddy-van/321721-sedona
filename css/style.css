@@ -757,7 +757,7 @@ body {
   .site-by:active {
     background-image: url(../img/htmlac.png);
     background-repeat: no-repeat;
-    background-position: -11px -74px;
+    background-position: -11px -75px;
   }
 
   /*Hotels-page*/
@@ -1191,7 +1191,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: flex-end; 
     height: 46px;
+    
   }
 
   .stars {
@@ -1209,16 +1211,12 @@ body {
     background-image: url(../img/spritesheet.png);
     background-repeat: no-repeat;
     background-position: -10px -136px;
-
   }
-
-
 
   .hotel-info p {
     display: inline-block;
     box-sizing: border-box;
     width: 110px;
-    height: 28px;
     text-align: center;
     padding: 3px 0;
     margin-bottom: 0;
